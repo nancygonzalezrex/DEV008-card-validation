@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="https://images.pexels.com/photos/2343466/pexels-photo-2343466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="hogar">
+      <h1> Outlet del Hogar </h1>
+      <h2>¡Valida tu tarjeta </h2>
+    </header>
+    <main>
+      <div id="contenedor-tarjeta">
+        <div class="tarjeta">
+          <div class="header-tarjeta"></div>
+          <div class="contenedor-chip-tarjeta">
+            <div class="chip"></div>
+          </div>
+          <div class="texto-numero-tarjeta"></div>
+        </div>
+      </div>
+      <div id="validacion-tarjeta"></div>
+      <div id="contenedor-formulario">
+        <form class="formulario">
+          <input
+            type="text"
+            placeholder="Numero de tarjeta"
+            maxlength="16"
+            id="input-numero-tarjeta"
+          />
+          <input
+          type="text"
+          placeholder="Nombre Titular"
+          maxlength="40"
+          id="input-nombre-titular"
+        />
+        <input
+        type="date"
+        maxlength="4"
+        id="input-fecha-expiracion"
+        />
+          <button type="button" id="button-enviar-validacion-tarjeta">
+            Validar Tarjeta
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>GRACIAS POR PREFERIRNOS</p>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

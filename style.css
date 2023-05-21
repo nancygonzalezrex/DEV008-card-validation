@@ -1,0 +1,119 @@
+body {
+  background-color: rgb(204, 224, 243);
+  background: linear-gradient(70deg, rgb(202, 234, 184), rgb(170, 141, 216));
+  background-size: inherit;
+}
+
+img{
+  width: 500px;
+  height: 500px;
+  float: left;
+}
+h1{
+  color: rgb(42, 44, 46);
+}
+h1:hover{
+  color: rgb(160, 17, 105);
+}
+h1::after{
+  content: "🏠";
+}
+h2{
+  color: rgb(44, 41, 43);
+}
+h2:hover{
+  color: rgb(156, 22, 125);
+}
+h2::after{
+  content: "✅";
+}
+header {
+  text-align: center;
+}
+
+#contenedor-tarjeta {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  
+}
+.tarjeta {
+  background-color: #a9a1a1;
+  width: 350px;
+  height: 200px;
+  border-radius: 18px;
+  padding: 10px 0;
+}
+
+.header-tarjeta {
+  display: flex;
+  justify-content: flex-end;
+  height: 36px;
+  align-items: center;
+  margin-right: 8px;
+  font-size: 25px;
+}
+.contenedor-chip-tarjeta {
+  padding-left: 32px;
+}
+.chip {
+  height: 40px;
+  width: 60px;
+  background-color: rgb(233, 200, 18);
+  border-radius: 0 6px 6px 0;
+  border: 1px solid #b5b5b5;
+}
+.chip::before {
+  content: "♥";
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: rgb(54, 195, 223);
+}
+.texto-numero-tarjeta {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+#contenedor-formulario {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+#input-numero-tarjeta {
+  height: 32px;
+  margin-bottom: 10px;
+}
+#input-nombre-titular{
+  height: 32px;
+  margin-bottom: 10px;
+}
+#input-fecha-expiracion{
+  height: 32px;
+  margin-bottom: 10px;
+}
+p{
+  color:black;
+  font-size: 30px;
+}
+p:hover{
+  color: rgb(169, 22, 93);
+}
+#button-enviar-validacion-tarjeta {
+  height: 32px;
+  color: white;
+  background-color: rgb(0, 96, 128);
+}
+
+#validacion-tarjeta {
+  display: flex;
+  justify-content: center;
+}

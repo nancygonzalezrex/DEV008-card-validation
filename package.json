@@ -4,12 +4,12 @@
   "main": "src/index.html",
   "license": "MIT",
   "scripts": {
-    "htmlhint": "htmlhint src/*.html test/*.html",
-    "eslint": "eslint --ext .js src/ test/",
+    "start": "serve ./src",
     "pretest": "npm run eslint && npm run htmlhint",
     "test": "jest --verbose --coverage",
+    "eslint": "eslint --ext .js src/ test/",
+    "htmlhint": "htmlhint src/*.html test/*.html",
     "open-coverage-report": "opener ./coverage/lcov-report/index.html",
-    "start": "serve ./src",
     "deploy": "gh-pages -d src"
   },
   "devDependencies": {
@@ -21,7 +21,7 @@
     "htmlhint": "^1.0.0",
     "jest": "^27.0.1",
     "opener": "^1.5.1",
-    "serve": "^13.0.2"
+    "serve": "^14.2.0"
   },
   "engines": {
     "node": ">=16.x"

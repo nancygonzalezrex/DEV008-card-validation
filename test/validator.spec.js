@@ -22,6 +22,9 @@ describe('validator', () => {
     it('debería retornar false para "1234567890"', () => {
       expect(validator.isValid('1234567890')).toBe(false);
     });
+    it('debería retornar false cuando no se ingresa numero', () => {
+      expect(validator.isValid('')).toBe(false);
+    });
   });
 
   describe('validator.maskify', () => {
@@ -29,7 +32,7 @@ describe('validator', () => {
       expect(typeof validator.maskify).toBe('function');
     });
 
-    it('Debería retornar "############5616" para "4556364607935616"', () => {
+    it('Debería retornar "############5616" para ""', () => {
       expect(validator.maskify('4556364607935616')).toBe('############5616');
     });
 
